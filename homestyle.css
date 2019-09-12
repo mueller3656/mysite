@@ -1,0 +1,86 @@
+
+body
+{
+    background-color: #818181;
+}
+/* Side Nav taken from w3schools*/
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 100px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    font-family: Calibri, serif;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 100px; /* Same as the width of the sidebar */
+    padding: 0 10px;
+    color: #f5f5f5;
+    font-family: Calibri, serif;
+}
+
+.sidenav a.active {
+    background-color: #7200f1;
+    color: white;
+}
+
+* {box-sizing: border-box}
+/*..............................................................................................................................*/
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 100px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+    opacity: 1;
+}
+/*Taken from w3schools*/
+
